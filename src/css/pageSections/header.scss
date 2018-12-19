@@ -1,0 +1,16 @@
+@import '../helpers/vars/colors';
+@import '../helpers/mixins/layout';
+
+.page-header {
+    background-color: map-get($colors, ideBGDark);
+    padding: 70px 10px 25px;;
+}
+
+.page-heading {
+    font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+    color: map-get($colors, white);
+    font-size: 1.2em;
+    letter-spacing: normal;
+    @include flex(true);
+    margin-bottom: 0;
+}

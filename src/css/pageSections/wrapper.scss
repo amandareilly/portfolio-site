@@ -1,0 +1,6 @@
+@import '../helpers/mixins/layout';
+
+.wrapper, .page-wrap {
+    @include flex(true);
+    justify-content: space-between;
+}

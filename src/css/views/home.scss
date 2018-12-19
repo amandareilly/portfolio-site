@@ -1,0 +1,45 @@
+@import '../helpers/mixins/layout';
+@import '../helpers/mixins/setColors';
+.home-container {
+    @include container(false, false);
+    @include setColors(ideBGDark, white);
+    @include flex(true);
+}
+
+.headshot {
+    max-width: 250px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px map-get($colors, black);
+}
+
+.greeting {
+    color: map-get($colors, ideBGDark);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: -20px;
+    background-color: map-get($colors, tagPink);
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 10px 10px 10px map-get($colors, black);
+}
+
+.link-box {
+    @include flex(true);
+    justify-content: space-around;
+}
+.read-more {
+    display: block;
+    padding: 15px;
+    border: 2px solid map-get($colors, tagPink);
+    color: map-get($colors, tagPink);
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 5px map-get($colors, lessBlack);
+}
+
+.read-more:hover, .read-more:active, .read-more:focus {
+    color: map-get($colors, lessBlack);
+    background-color: map-get($colors, tagPink);
+}

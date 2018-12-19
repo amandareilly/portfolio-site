@@ -1,0 +1,30 @@
+// Reset and Base
+@import './helpers/base/reset';
+@import './helpers/typeplate-sk/typeplate-index';
+@import './helpers/base/typography';
+
+// Defaults
+@import './helpers/base/defaults/formDefaults';
+
+// Mixins
+@import './helpers/mixins/layout';
+
+// Icon Sets
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+#root {
+    min-height: 100vh;
+    margin: 0;
+    @include flex(true);
+}
+
+.hidden {
+    display: none;
+}
