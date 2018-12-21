@@ -20,8 +20,8 @@ export default function ComponentName(props) {
                 </div>
             </div>
             <div className="link-box">
-                <Link to='/about' className='read-more about'>About Me</Link>
-                <Link to='/projects' className='read-more projects'>My Projects</Link>
+                <Link to='/projects' className='read-more projects'>Recent Projects</Link>
+                <Link to='/about' className='read-more resume'>Resume</Link>
             </div>
         </div>
     );
