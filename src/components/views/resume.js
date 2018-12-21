@@ -33,7 +33,7 @@ export default function Resume(props) {
             <h2 className="section-title">
                 &lt;<span className="component-name">Resume</span>&gt;
             </h2>
-            <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-pdf-link resume-link"><i class="fas fa-file-pdf" aria-hidden></i> Download As PDF</a>
+            <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-pdf-link resume-link"><i className="fas fa-file-pdf" aria-hidden></i> Download As PDF</a>
             <div className="resume-wrapper">
                 <section className="resume-summary resume-section">
                     <h4 className="resume-section-title">Summary</h4>

@@ -15,19 +15,19 @@ export default function Contact(props) {
             </div>
             <div className="contact-details-wrapper">
                 <div className="contact-detail">
-                    <i class="fas fa-envelope" aria-hidden></i>
+                    <i className="fas fa-envelope" aria-hidden></i>
                     <a href="mailto:amanda@amandareilly.me" className="link contact-link contact-detail-data" aria-label="Email Address">amanda@amandareilly.me</a>
                 </div>
                 <div className="contact-detail">
-                    <i class="fas fa-mobile-alt" aria-hidden></i>
-                    <p class="contact-detail-data" aria-label="Phone Number">619-739-1419</p>
+                    <i className="fas fa-mobile-alt" aria-hidden></i>
+                    <p className="contact-detail-data" aria-label="Phone Number">619-739-1419</p>
                 </div>
                 <div className="contact-detail">
-                    <i class="fab fa-github" aria-hidden></i>
+                    <i className="fab fa-github" aria-hidden></i>
                     <a className="link contact-link contact-detail-data" href="https://github.com/amandareilly" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">github.com/amandareilly</a>
                 </div>
                 <div className="contact-detail">
-                    <i class="fab fa-linkedin-in" aria-hidden></i>
+                    <i className="fab fa-linkedin-in" aria-hidden></i>
                     <a className=" link contact-link contact-detail-data" href="https://linkedin.com/in/amandareilly-sd" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">linkedin.com/in/amandareilly-sd</a>
                 </div>
             </div>

@@ -6,7 +6,6 @@ import projectData from '../../data/projectData';
 import '../../css/views/projects.scss';
 
 export default function Projects(props) {
-    console.log(projectData);
     const projects = projectData.map((project) => {
         return(
             <ProjectCard 
