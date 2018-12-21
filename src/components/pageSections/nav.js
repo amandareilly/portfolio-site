@@ -15,7 +15,7 @@ export default class Nav extends React.Component {
     render() {
         return (
             <nav className="main-nav">
-                <Menu right pageWrapId={"page-wrap"} outerContainerId={"wrapper"}>
+                <Menu right pageWrapId={"page-wrap"} outerContainerId={"wrapper"} isOpen={false}>
                     <Link to='/'>Home</Link>
                     <Link to='/about'>About</Link>
                     <Link to='/projects'>Projects</Link>
