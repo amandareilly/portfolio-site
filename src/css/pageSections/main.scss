@@ -1,0 +1,9 @@
+@import '../helpers/mixins/layout';
+
+.main-container {
+    flex-grow: 1;
+    @include flex(true);
+    &>div {
+        flex-grow: 1;
+    }
+}

@@ -1,6 +1,6 @@
 @import '../vars/colors';
 
-@mixin container($border: false, $centered: true, $borderColor: light, $borderWidth: 1px){
+@mixin container($border: false, $centered: true, $borderColor: white, $borderWidth: 1px){
     width: 100%;
     padding: 20px;
     @if $border {
@@ -12,8 +12,8 @@
         text-align: left;
     }
 
-    @media only screen and (max-width: 600px) {
-        padding: 10px;
+    @media only screen and (max-width: 400px) {
+        padding: 15px;
     }
 }
 

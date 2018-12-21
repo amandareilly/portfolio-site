@@ -1,0 +1,28 @@
+@import '../helpers/mixins/layout';
+@import '../helpers/mixins/setColors';
+@import '../helpers/mixins/setBackground';
+
+.footer-container {
+    @include container(false, false);
+    @include setColors(ideBG, white);
+    @media only screen and (max-width: 400px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer-link-wrapper {
+        @include flex;
+        justify-content: space-evenly;
+        @media only screen and (min-width: 800px) {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    }
+    font-size: 1.5em;
+    .footer-link:link, .footer-link:visited {
+        color: map-get($colors, tagGreen);
+        display: block;
+    }
+    .footer-link:active, .footer-link:hover, .footer-link:focus {
+        color: map-get($colors, tagPink);
+    }
+}

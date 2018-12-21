@@ -2,32 +2,54 @@
 @import '../helpers/mixins/setColors';
 .home-container {
     @include container(false, false);
-    @include setColors(ideBGDark, white);
+    @include setColors(ideBG, white);
     @include flex(true);
 }
 
+.row-wrapper {
+    @include flex(true);
+    @media only screen and (min-width: 800px) {
+        flex-direction: row;
+        .headshot-wrapper {
+            margin-right: 25px;
+        }
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.headshot-wrapper {
+    margin: 0 auto;
+}
 .headshot {
     max-width: 250px;
     margin: 0 auto;
-    box-shadow: 10px 10px 10px map-get($colors, black);
 }
 
 .greeting {
-    color: map-get($colors, ideBGDark);
-    font-size: 1.5em;
+    color: map-get($colors, ideBG);
+    font-size: 1.3em;
     font-weight: 700;
-    margin-top: -20px;
-    background-color: map-get($colors, tagPink);
+    margin-top: -10px;
+    background-color: map-get($colors, tagBlue);
     padding: 10px;
     width: 250px;
     text-align: center;
-    box-shadow: 10px 10px 10px map-get($colors, black);
 }
 
 .link-box {
     @include flex(true);
     justify-content: space-around;
+    @media only screen and (min-width: 600px) {
+        flex-direction: row;
+    }
+    @media only screen and (min-width: 800px) {
+        min-width: 600px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
 }
+
 .read-more {
     display: block;
     padding: 15px;
@@ -36,10 +58,31 @@
     margin: 5px;
     text-decoration: none;
     text-align: center;
-    box-shadow: 5px 5px 5px map-get($colors, lessBlack);
+    @media only screen and (min-width: 600px) {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+    }
 }
 
-.read-more:hover, .read-more:active, .read-more:focus {
-    color: map-get($colors, lessBlack);
+.read-more:hover,
+.read-more:active,
+.read-more:focus {
+    color: map-get($colors, ideBG);
     background-color: map-get($colors, tagPink);
+}
+
+.intro-text {
+    font-size: 1.2em;
+    @media only screen and (min-width: 800px) {
+        margin: 0;
+    }
+
+}
+
+.intro-text-wrapper {
+    @include flex(true);
+    justify-content: space-evenly;
+    flex-grow: 2;
+    flex-shrink: 2;
 }

@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 @import '../vars/colors';
-
 html,
 body {
-    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    color: map-get($colors, tagBlue);
     font-style: normal;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.4em;
+    line-height: 1.6em;
+    letter-spacing: 1px;
 }
 
 p+p {

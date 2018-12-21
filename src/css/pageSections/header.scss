@@ -1,16 +1,27 @@
 @import '../helpers/vars/colors';
 @import '../helpers/mixins/layout';
-
 .page-header {
-    background-color: map-get($colors, ideBGDark);
-    padding: 70px 10px 25px;;
+    background-color: map-get($colors, ideBG);
+    padding: 70px 10px 25px;
+    @include flex;
+    justify-content: center;
 }
 
 .page-heading {
-    font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+    @media only screen and (min-width: 400px) {
+        font-size: 1.2em;
+    }
+    @media only screen and (min-width: 800px) {
+        font-size: 1.5em;
+    }
     color: map-get($colors, white);
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: normal;
     @include flex(true);
     margin-bottom: 0;
+    .tag-content {
+        font-size: 1.5em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }

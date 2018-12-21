@@ -3,13 +3,13 @@
 @import '../../vars/colors';
 @import '../../mixins/setBackground';
 .form {
-    @include container(true, false, dark, 3px);
+    @include container(true, false, ideBG, 3px);
     border-radius: 10px;
-    @include setBackground(semiLight, .5);
+    @include setBackground(white, .5);
     max-width: 80vw;
     margin: 0 auto;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 400px) {
         max-width: 90vw;
     }
 }
@@ -52,11 +52,11 @@
 .button {
     padding: 20px;
     font-size: 1.25em;
-    @include setColors(dark, light);
+    @include setColors(ideBG, white);
     border: none;
     cursor: pointer;
     &.loading {
-        @include setColors(gray, dark);
+        @include setColors(gray, ideBG);
     }
 }
 
@@ -104,14 +104,14 @@
     position: absolute;
     top: -2px;
     left: 7px;
-    color: map-get($colors, dark);
+    color: map-get($colors, ideBG);
 }
 
 .form-instructions {
     margin: 20px;
     padding: 20px;
-    border: 2px solid map-get($colors, dark);
-    @include setBackground(dark, .25);
+    border: 2px solid map-get($colors, ideBG);
+    @include setBackground(ideBG, .25);
     font-size: 1.5em;
     line-height: 1.5em;
 

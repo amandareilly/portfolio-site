@@ -8,13 +8,13 @@
     right: 20px;
     top: 20px;
     .bm-burger-bars {
-        background: map-get($colors, tagPink);
+        background: map-get($colors, tagGreen);
     }
 }
 
 .bm-burger-button:hover, .bm-burger-button:active, .bm-burger-button:focus, .bm-burger-button:focus-within {
     .bm-burger-bars {
-        background: map-get($colors, tagGreen);
+        background: map-get($colors, tagYellow);
         opacity: 1 !important;
     }
 }
@@ -25,23 +25,29 @@
 }
 
 .bm-cross {
-    background: map-get($colors, ideBGDark);
+    background: map-get($colors, tagYellow);
+}
+
+.bm-cross-button:hover, .bm-cross-button:active, .bm-cross-button:focus, .bm-cross-button:focus-within {
+    .bm-cross {
+        background: map-get($colors, tagPurple);
+    }
 }
 
 .bm-menu {
-    background: map-get($colors, tagPink);
+    background: map-get($colors, ideBG);
     padding-top: 40px;
 }
 
 .bm-item {
     padding: 20px;
     text-decoration: none;
-    color: map-get($colors, lessBlack);
+    color: map-get($colors, tagGreen);
     font-weight: 600;
 }
 
 .bm-item:hover, .bm-item:active, .bm-item:focus {
     background-color: map-get($colors, tagGreen);
     font-weight: 800;
-    box-shadow: 0px 0px 20px rgba(map-get($colors, ideBGDark), .5);
+    color: map-get($colors, ideBG);
 }
