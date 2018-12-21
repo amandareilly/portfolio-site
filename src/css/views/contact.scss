@@ -1,0 +1,50 @@
+@import '../helpers/vars/colors';
+@import '../helpers/mixins/layout';
+.contact-container {
+    @include flex(true);
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    .section-title {
+        margin: 0;
+    }
+}
+.contact-text {
+    color: map-get($colors, white);
+    text-align: center;
+    .available {
+        color: map-get($colors, tagPurple);
+        text-transform: uppercase;
+    }
+    .available-for {
+        color: map-get($colors, tagOrange);
+    }
+}
+
+.contact-detail {
+    color: map-get($colors, white);
+    @include flex(true);
+    align-items: center;
+    margin-bottom: 20px;
+    .fas,
+    .fab {
+        color: map-get($colors, tagYellow);
+        font-size: 2em;
+    }
+}
+
+.contact-link:link,
+.contact-link:visited {
+    color: map-get($colors, tagGreen);
+    text-decoration: none;
+}
+
+.contact-link:active,
+.contact-link:hover,
+.contact-link:focus {
+    color: map-get($colors, tagPink);
+}
+
+.contact-detail-data {
+    margin-bottom: 0;
+}
