@@ -1,0 +1,45 @@
+@import '../helpers/vars/colors';
+
+.resume-wrapper {
+    color: map-get($colors, white);
+}
+.resume-section {
+    padding-bottom: 20px;
+}
+.resume-section-title {
+    color: map-get($colors, tagYellow);
+    font-size: 1.25em;
+    border-bottom: 1px solid map-get($colors, white);
+    padding-bottom: .5em;
+    @media only screen and (min-width: 600px) {
+        font-size: 2em;
+    }
+}
+
+.component-name {
+    color: map-get($colors, tagBlue);
+}
+
+.resume-link:link, .resume-link:visited {
+    color: map-get($colors, tagGreen);
+    text-decoration: none;
+}
+
+.resume-link:active, .resume-link:focus, .resume-link:hover {
+    color: map-get($colors, tagPink);
+}
+
+dt {
+    font-weight: bold;
+    color: map-get($colors, tagPurple);
+}
+
+.resume-pdf-link {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

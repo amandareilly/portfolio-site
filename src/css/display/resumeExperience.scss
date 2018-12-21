@@ -1,0 +1,56 @@
+@import '../helpers/vars/colors';
+@import '../helpers/mixins/layout';
+
+.resume-experience-employer {
+    text-transform: uppercase;
+    color: map-get($colors, tagPurple);
+    margin: 1em 0 .25em 0;
+}
+
+.resume-experience-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: map-get($colors, tagOrange);
+    margin: 1em 0 .25em 0;
+}
+
+.resume-experience-location {
+    color: map-get($colors, tagPurple);
+    margin-bottom: 0;
+    border-bottom: 1px solid map-get($colors, tagPurple);
+}
+
+.resume-experience-dates {
+    color: map-get($colors, tagOrange);
+}
+
+.resume-experience-list-item {
+    margin-bottom: .5em;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.resume-experience-details {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+@media only screen and (min-width: 850px) {
+    .resume-experience-header-row {
+        @include flex;
+        justify-content: space-between;
+        &:first-child {
+            border-bottom: 1px solid map-get($colors, tagPurple);
+        }
+        margin-bottom: .5em;
+    }
+
+    .resume-experience-location, .resume-experience-employer, .resume-experience-title, .resume-experience-dates {
+        border: none;
+        margin: 0;
+    }
+    .resume-experience-entry {
+        margin-bottom: 25px;
+    }
+}
