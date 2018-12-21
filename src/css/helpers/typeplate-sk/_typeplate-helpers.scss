@@ -28,7 +28,7 @@ p + .typl8-drop-cap {
 /**
  * Lining Definition Style Markup
  *
-  <dl class="typl8-lining">
+  <dl className="typl8-lining">
     <dt><b></b></dt>
     <dd></dd>
   </dl>
@@ -44,7 +44,7 @@ p + .typl8-drop-cap {
 /**
  * Dictionary Definition Style Markup
  *
-  <dl class="typl8-dictionary-style">
+  <dl className="typl8-dictionary-style">
     <dt><b></b></dt>
     <dd></dd>
   </dl>
@@ -87,7 +87,7 @@ p + .typl8-drop-cap {
 /**
  * Pull Quotes Markup
  *
-  <aside class="typl8-pull-quote">
+  <aside className="typl8-pull-quote">
     <blockquote>
       <p></p>
     </blockquote>
@@ -130,7 +130,7 @@ p + .typl8-drop-cap {
   <article>
     <p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
     <footer>
-      <ol class="foot-notes">
+      <ol className="foot-notes">
         <li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
       </ol>
     </footer>

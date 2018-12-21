@@ -1,0 +1,62 @@
+@import '../helpers/vars/colors';
+@import '../helpers/mixins/layout';
+
+.project-card {
+    @include flex(true);
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid map-get($colors, white);
+    border-radius: 30px;
+    color: map-get($colors, white);
+    margin-bottom: 15px;
+    .project-body-footer-wrapper {
+        flex-grow: 1;
+        @include flex(true);
+        justify-content: space-between;
+    }
+    .project-footer {
+        @media only screen and (min-width: 1050px) {
+            display: grid;
+            grid-template-rows: 4ch 15ch;
+        }
+    }
+    .project-header {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        border-bottom: 1px solid map-get($colors, white);
+    }
+    .project-section-title {
+        color: map-get($colors, tagYellow);
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    .project-thumbnail {
+        max-width: 100%;
+        border-radius: 50%;
+        border: 5px solid map-get($colors, white);
+        margin: 0 auto;
+    }
+
+    .tech-stack {
+        color: map-get($colors, tagPurple);
+        margin-top: 1em;
+        padding-top: 1em;
+        border-top: 1px solid map-get($colors, white);
+    }
+
+    .project-link:link, .project-link:visited {
+        color: map-get($colors, tagGreen);
+        text-decoration: none;
+        font-size: 1.25em;
+    }
+
+    .project-link:active, .project-link:hover, .project-link:focus {
+        color: map-get($colors, tagPink);
+    }
+
+    .project-header {
+        @include flex(true);
+    }
+}

@@ -6,4 +6,5 @@
     &>div {
         flex-grow: 1;
     }
+    @include container(false, false);
 }

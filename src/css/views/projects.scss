@@ -1,0 +1,27 @@
+@import '../helpers/vars/colors';
+@import '../helpers/mixins/layout';
+.projects-container {
+    border-top: 1px solid map-get($colors, white);
+    padding-top: 25px;
+}
+
+.project-card-wrapper {
+    @media only screen and (min-width: 1050px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+}
+
+.section-title {
+    color: map-get($colors, white);
+    font-size: 1.25em;
+    @media only screen and (min-width: 600px) {
+        font-size: 2em;
+    }
+}
+
+.component-name {
+    color: map-get($colors, tagBlue);
+}

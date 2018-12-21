@@ -1,7 +1,6 @@
 @import '../helpers/mixins/layout';
 @import '../helpers/mixins/setColors';
 .home-container {
-    @include container(false, false);
     @include setColors(ideBG, white);
     @include flex(true);
 }
