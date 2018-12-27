@@ -87,7 +87,7 @@ export default [
             },
             {
                 text: 'Live Quiz',
-                url: 'http://amandareilly.me/quiz-app',
+                url: 'http://quiz-app.amandareilly.me/',
                 type: 'link'
             }
         ]
