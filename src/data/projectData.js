@@ -69,7 +69,7 @@ export default [
             },
             {
                 text: 'Live Demo',
-                url: 'http://amandareilly.me/symptom-checker',
+                url: 'http://symptom-checker.amandareilly.me',
                 type: 'link'
             }
         ]
